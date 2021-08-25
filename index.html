@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="description" content="Webcam Sam">
+    <!-- removing mobile responsiveness -->
+    <!-- <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1"> -->
+    <meta itemprop="description" content="Webcam Sam">
+    <meta itemprop="image" content="images/icon.png">
+    <meta itemprop="name" content="Webcam Sam">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta id="theme-color" name="theme-color" content="#ffffff">
+
+    <base target="_blank">
+
+    <title>See how you look.</title>
+
+    <link rel="icon" sizes="192x192" href="images/icon.png">
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="record/css/main.css">
+
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="images/webcamsam-logo.png" alt="Webcam Sam Logo" height="75" background-color="transparent">
+    </div>
+
+    <h1>Webcam Sam - see how you look.</h1>
+
+    <div id="container">
+
+        <div>
+            <button id="start">Start Camera</button>
+            <button id="record" disabled>Start</button>
+            <button id="play" disabled>Play</button>
+            <button id="download" disabled>Download</button>
+            <button id="startOver" disabled>Start Over</button>
+        </div>
+
+        <div>
+            <span id="errorMsg"></span>
+        </div>
+
+        <div>
+            <video id="gum" playsinline autoplay muted></video>
+            <video id="recorded" playsinline loop></video>
+        </div>
+
+    </div>
+
+    <div id="disclaimer">
+        <p>* only Chrome on desktop is supported at this time</p>
+    </div>
+
+    <!-- include adapter for srcObject shim -->
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="record/js/main.js" async></script>
+
+    <input type="checkbox" id="echoCancellation" class="hiddenItem" checked>
+    <!-- <input type="checkbox" id="echoCancellation" checked> -->
+
+</body>
+
+</html>
