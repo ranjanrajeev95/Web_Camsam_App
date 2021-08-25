@@ -1,6 +1,6 @@
 # Web_Camsam
 
-WebcamSam.com shows you how you look.
+Web_Camsam is a web app to shows you how you look. Built with JavaScript, WebRTC API, HTML and CSS.
 
 ## Link
 
