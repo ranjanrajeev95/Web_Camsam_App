@@ -1,8 +1,8 @@
-# Webcam Sam
+# Web_Camsam
 
 WebcamSam.com shows you how you look.
 
-## Use
+## Link
 
 Go to www.webcamsam.com. 
 
